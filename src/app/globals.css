@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-button-next {
+  color: red !important;
+}
+
+.swiper-button-next {
+  background-image: url(./assets/next-button.svg);
+  background-color: white;
+  border: 1px solid black;
+  border-color: gray;
+  border-radius: 50%;
+  width: 22px !important;
+  height: 22px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(./assets/prev-button.svg);
+  transform: rotate(-180deg);
+  background-color: white;
+  border: 1px solid black;
+  border-color: gray;
+  border-radius: 50%;
+  width: 22px !important;
+  height: 22px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

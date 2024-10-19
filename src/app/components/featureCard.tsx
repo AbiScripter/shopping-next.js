@@ -17,6 +17,7 @@ const FeatureCard = ({ imgsrc, contentTitle, content }: FeatureCardProps) => {
           className="transition-all duration-700 hover:scale-110 cursor-pointer"
         />
       </div>
+
       <p className="text-xl font-semibold">{contentTitle.toUpperCase()}</p>
       <p className="text-sm text-center">{content}</p>
       <Button text="shop now" />

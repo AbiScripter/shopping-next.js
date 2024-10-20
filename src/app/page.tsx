@@ -1,9 +1,6 @@
-// import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-// import Hero from "./components/hero";
 
 import DressCard from "./components/dressCard";
 import CategoryCard from "./components/categoryCard";

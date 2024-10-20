@@ -1,6 +1,6 @@
 "use client"; // Swiper is a client-side library, and using it in server-side rendering (SSR) can cause issues
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";

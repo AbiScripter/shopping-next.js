@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import plus from "@/app/assets/plus.svg";
-import minus from "@/app/assets/minus.svg";
+import plus from "@/app/assets/icons/plus.svg";
+import minus from "@/app/assets/icons/minus.svg";
 import Image from "next/image";
 
 type accordianProps = {

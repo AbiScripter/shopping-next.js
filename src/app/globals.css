@@ -7,7 +7,7 @@
 }
 
 .swiper-button-next {
-  background-image: url("./assets/next-button.svg");
+  background-image: url("./assets/icons/next-button.svg");
   background-color: white;
   border: 1px solid black;
   border-color: gray;
@@ -22,7 +22,7 @@
 }
 
 .swiper-button-prev {
-  background-image: url("./assets/prev-button.svg");
+  background-image: url("./assets/icons/prev-button.svg");
   transform: rotate(-180deg);
   background-color: white;
   border: 1px solid black;

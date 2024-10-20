@@ -4,28 +4,18 @@ import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
-import { instaImages, socialMediaIcons } from "../lib/images";
-import Button from "./button";
+import { brandImages } from "@/app/lib/images";
 
-const InstaCardsSwiper = () => {
+const BrandsSection = () => {
   return (
-    <div className="flex flex-col gap-5 items-center ">
-      <p className="text-lg font-bold flex items-center gap-4">
-        <span>
-          <Image src={socialMediaIcons[1].src} alt={socialMediaIcons[1].alt} />
-        </span>
-        <span>#ELLA ON INSTAGRAM</span>
-      </p>
-      <p className="text-sm font-thin">
-        Phasellus lorem malesuada ligula pulvinar commodo maecenas
-      </p>
+    <div className="flex flex-col gap-5 items-center">
       <Swiper
         className="w-full"
         navigation
         pagination={{ type: "fraction" }}
         modules={[Navigation]}
         slidesPerView={5}
-        // spaceBetween={3}
+        spaceBetween={5}
         loop={true}
         breakpoints={{
           // When the screen width is >= 640px (sm)
@@ -46,15 +36,14 @@ const InstaCardsSwiper = () => {
           },
         }}
       >
-        {instaImages.map((img, index) => (
+        {brandImages.map((img, index) => (
           <SwiperSlide key={index}>
             <Image src={img.src} alt={img.alt} />
           </SwiperSlide>
         ))}
       </Swiper>
-      <Button text="view gallery" />
     </div>
   );
 };
 
-export default InstaCardsSwiper;
+export default BrandsSection;

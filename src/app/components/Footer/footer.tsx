@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { paymentIcons } from "../lib/images";
+import { paymentIcons } from "../../lib/images";
 import { AccordianFooterData } from "./mobileFooter";
 import FooterFormSection from "./footerFormSection";
 

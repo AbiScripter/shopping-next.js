@@ -1,4 +1,4 @@
-import close from "@/app/assets/close.svg";
+import close from "@/app/assets/icons/close.svg";
 import Image from "next/image";
 
 const sidebarItems = [
@@ -33,24 +33,22 @@ const Sidebar = ({
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
-        <div className="">
-          <div className="sidebar-header bg-black text-white flex justify-between items-center p-4">
-            <div className="  text-lg font-semibold">
-              <p>Menu</p>
-            </div>
-            <p onClick={toggleSidebar} className="cursor-pointer">
-              <Image src={close} alt="close" />
-            </p>
+        <div className="sidebar-header bg-black text-white flex justify-between items-center p-4">
+          <div className="text-lg font-semibold">
+            <p>Menu</p>
           </div>
-
-          <ul className="mt-5">
-            {sidebarItems.map((item, index) => (
-              <p key={index} className="py-4 px-4  border-b-2">
-                {item}
-              </p>
-            ))}
-          </ul>
+          <p onClick={toggleSidebar} className="cursor-pointer">
+            <Image src={close} alt="close" />
+          </p>
         </div>
+
+        <ul className="mt-5">
+          {sidebarItems.map((item, index) => (
+            <p key={index} className="py-4 px-4  border-b-2">
+              {item}
+            </p>
+          ))}
+        </ul>
       </div>
     </>
   );

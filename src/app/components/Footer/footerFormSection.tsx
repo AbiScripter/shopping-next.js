@@ -1,5 +1,5 @@
+import { socialMediaIcons } from "@/app/lib/images";
 import Image from "next/image";
-import { socialMediaIcons } from "../lib/images";
 
 const FooterFormSection = () => {
   return (

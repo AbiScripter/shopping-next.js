@@ -1,55 +1,55 @@
-import dressOne from "@/app/assets/dress-1.webp";
-import dressTwo from "@/app/assets/dress-2.webp";
-import dressThree from "@/app/assets/dress-3.webp";
-import dressFour from "@/app/assets/dress-4.webp";
-import dressFive from "@/app/assets/dress-5.webp";
-import dressSix from "@/app/assets/dress-6.webp";
-import dressSeven from "@/app/assets/dress-7.webp";
+import heroOneMobile from "@/app/assets/clothes/hero-1-mobile.webp";
+import heroOneDesktop from "@/app/assets/clothes/hero-1-desktop.jpg";
+import heroTwoMobile from "@/app/assets/clothes/hero-2-mobile.webp";
+import heroTwoDesktop from "@/app/assets/clothes/hero-2-desktop.webp";
 
-import trendingOne from "@/app/assets/trending-1.webp";
-import trendingTwo from "@/app/assets/trending-2.webp";
-import trendingThree from "@/app/assets/trending-3.webp";
-import trendingFour from "@/app/assets/trending-4.webp";
-import trendingFive from "@/app/assets/trending-5.webp";
+import dressOne from "@/app/assets/clothes/dress-1.webp";
+import dressTwo from "@/app/assets/clothes/dress-2.webp";
+import dressThree from "@/app/assets/clothes/dress-3.webp";
+import dressFour from "@/app/assets/clothes/dress-4.webp";
+import dressFive from "@/app/assets/clothes/dress-5.webp";
+import dressSix from "@/app/assets/clothes/dress-6.webp";
+import dressSeven from "@/app/assets/clothes/dress-7.webp";
 
-import categoryOne from "@/app/assets/category-image-1.jpg";
-import categoryTwo from "@/app/assets/category-image-2.jpg";
-import categoryThree from "@/app/assets/category-image-3.jpg";
+import trendingOne from "@/app/assets/clothes/trending-1.webp";
+import trendingTwo from "@/app/assets/clothes/trending-2.webp";
+import trendingThree from "@/app/assets/clothes/trending-3.webp";
+import trendingFour from "@/app/assets/clothes/trending-4.webp";
+import trendingFive from "@/app/assets/clothes/trending-5.webp";
 
-import instaOne from "@/app/assets/insta-1.jpg";
-import instaTwo from "@/app/assets/insta-2.jpg";
-import instaThree from "@/app/assets/insta-3.jpg";
-import instaFour from "@/app/assets/insta-4.jpg";
-import instaFive from "@/app/assets/insta-5.jpg";
+import categoryOne from "@/app/assets/clothes/category-image-1.jpg";
+import categoryTwo from "@/app/assets/clothes/category-image-2.jpg";
+import categoryThree from "@/app/assets/clothes/category-image-3.jpg";
 
-import featureOne from "@/app/assets/feature-1.webp";
-import featureTwo from "@/app/assets/feature-2.webp";
-import featureThree from "@/app/assets/feature-3.webp";
+import instaOne from "@/app/assets/clothes/insta-1.jpg";
+import instaTwo from "@/app/assets/clothes/insta-2.jpg";
+import instaThree from "@/app/assets/clothes/insta-3.jpg";
+import instaFour from "@/app/assets/clothes/insta-4.jpg";
+import instaFive from "@/app/assets/clothes/insta-5.jpg";
 
-import facebook from "@/app/assets/icons8-facebook.svg";
-import instagram from "@/app/assets/icons8-instagram.svg";
-import pinterest from "@/app/assets/icons8-pinterest.svg";
-import tiktok from "@/app/assets/icons8-tiktok.svg";
-import youtube from "@/app/assets/icons8-youtube.svg";
-import twitter from "@/app/assets/icons8-twitterx.svg";
+import featureOne from "@/app/assets/brands/feature-1.webp";
+import featureTwo from "@/app/assets/brands/feature-2.webp";
+import featureThree from "@/app/assets/brands/feature-3.webp";
 
-import visa from "@/app/assets/visa.svg";
-import mastercard from "@/app/assets/mastercard.svg";
-import piMastero from "@/app/assets/pi-mastero.svg";
-import americanExpress from "@/app/assets/AmericanExpress.svg";
-import applePay from "@/app/assets/apple-pay.svg";
-import bitcoin from "@/app/assets/bitcoin.svg";
+import facebook from "@/app/assets/icons/icons8-facebook.svg";
+import instagram from "@/app/assets/icons/icons8-instagram.svg";
+import pinterest from "@/app/assets/icons/icons8-pinterest.svg";
+import tiktok from "@/app/assets/icons/icons8-tiktok.svg";
+import youtube from "@/app/assets/icons/icons8-youtube.svg";
+import twitter from "@/app/assets/icons/icons8-twitterx.svg";
 
-import heroOneMobile from "@/app/assets/hero-1-mobile.webp";
-import heroOneDesktop from "@/app/assets/hero-1-desktop.jpg";
-import heroTwoMobile from "@/app/assets/hero-2-mobile.webp";
-import heroTwoDesktop from "@/app/assets/hero-2-desktop.webp";
+import visa from "@/app/assets/icons/visa.svg";
+import mastercard from "@/app/assets/icons/mastercard.svg";
+import piMastero from "@/app/assets/icons/pi-mastero.svg";
+import americanExpress from "@/app/assets/icons/AmericanExpress.svg";
+import applePay from "@/app/assets/icons/apple-pay.svg";
+import bitcoin from "@/app/assets/icons/bitcoin.svg";
 
-import brandOne from "@/app/assets/brand-1.webp";
-import brandTwo from "@/app/assets/brand-2.webp";
-import brandThree from "@/app/assets/brand-3.webp";
-import brandFour from "@/app/assets/brand-4.webp";
-import brandFive from "@/app/assets/brand-5.webp";
+import brandOne from "@/app/assets/brands/brand-1.webp";
+import brandTwo from "@/app/assets/brands/brand-2.webp";
+import brandThree from "@/app/assets/brands/brand-3.webp";
+import brandFour from "@/app/assets/brands/brand-4.webp";
+import brandFive from "@/app/assets/brands/brand-5.webp";
 
 export { heroOneDesktop, heroOneMobile, heroTwoMobile, heroTwoDesktop };
 

@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import Button from "./button";
+import Button from "../button";
 
 type FeatureCardProps = {
   src: StaticImageData;

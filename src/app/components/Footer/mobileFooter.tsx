@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { paymentIcons } from "../lib/images";
+import { paymentIcons } from "../../lib/images";
 import Accordian from "./accodian";
 import FooterFormSection from "./footerFormSection";
 

@@ -2,8 +2,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import DressCard from "./components/dressCard";
-import CategoryCard from "./components/categoryCard";
+import DressCard from "./components/Cards/dressCard";
+import CategoryCard from "./components/Cards/categoryCard";
 import {
   categoryImages,
   newArrivalsImages,
@@ -12,17 +12,18 @@ import {
   heroOneMobile,
   heroTwoMobile,
 } from "./lib/images";
-import InstaCardsSwiper from "./components/instaCardsSection";
-import Footer from "./components/footer";
-import FeaturesSwiper from "./components/featuredSection";
+
+import Footer from "./components/Footer/footer";
 import SectionHeading from "./components/sectionHeading";
-import TrendingNowSwiper from "./components/trendingSection";
 import Hero from "./components/hero";
-import BrandsSwiper from "./components/brandsSection";
-import Header from "./components/header";
-import FooterNavBar from "./components/footerNavBar";
-import CategoryNavBar from "./components/categoryNavbar";
-import MobileFooter from "./components/mobileFooter";
+import FooterNavBar from "./components/Footer/footerNavBar";
+import CategoryNavBar from "./components/Header/categoryNavbar";
+import MobileFooter from "./components/Footer/mobileFooter";
+import Header from "./components/Header/header";
+import TrendingSection from "./components/Sections/trendingSection";
+import FeaturesSection from "./components/Sections/featuredSection";
+import BrandsSection from "./components/Sections/brandsSection";
+import InstagramSection from "./components/Sections/instaCardsSection";
 
 export default function Home() {
   return (
@@ -68,22 +69,22 @@ export default function Home() {
 
         {/* Trending Now Wrapper using SWIPER.JS*/}
         <section className="py-5">
-          <TrendingNowSwiper />
+          <TrendingSection />
         </section>
 
         {/* Featured On Wrapper */}
         <section className="pt-5 pb-10">
-          <FeaturesSwiper />
+          <FeaturesSection />
         </section>
 
         {/* Brand cards swiper */}
         <section className="py-5 border-t-2">
-          <BrandsSwiper />
+          <BrandsSection />
         </section>
 
         {/* Insta Cards Swiper */}
         <section className="py-5 ">
-          <InstaCardsSwiper />
+          <InstagramSection />
         </section>
       </div>
 

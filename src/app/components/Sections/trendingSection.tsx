@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { trendingImages } from "../lib/images";
-import DressCard from "./dressCard";
-import SectionHeading from "./sectionHeading";
+import SectionHeading from "../sectionHeading";
+import { trendingImages } from "@/app/lib/images";
+import DressCard from "../Cards/dressCard";
 
-const TrendingNowSwiper = () => {
+const TrendingSection = () => {
   return (
     <div className="flex flex-col gap-5">
       <SectionHeading heading={"trending now"} />
@@ -44,4 +44,4 @@ const TrendingNowSwiper = () => {
   );
 };
 
-export default TrendingNowSwiper;
+export default TrendingSection;

@@ -1,13 +1,14 @@
 "use client";
 import { useState } from "react";
-
-import logo from "@/app/assets/ella-logo-black-home-5_65x.webp";
 import Image from "next/image";
-import bag from "@/app/assets/bag.svg";
-import heart from "@/app/assets/heart.svg";
-import search from "@/app/assets/search.svg";
-import burgermenu from "@/app/assets/hamburger.svg";
-import user from "@/app/assets/user.svg";
+
+import logo from "@/app/assets/brands/ella-logo.webp";
+import bag from "@/app/assets/icons/bag.svg";
+import heart from "@/app/assets/icons/heart.svg";
+import search from "@/app/assets/icons/search.svg";
+import burgermenu from "@/app/assets/icons/hamburger.svg";
+import user from "@/app/assets/icons/user.svg";
+
 import Sidebar from "./sidebar";
 
 const Header = () => {
@@ -33,7 +34,7 @@ const MainNav = () => {
       <p className="bg-red text-red-500">
         <Image width={70} src={logo} alt="logo" className="logo" />
       </p>
-      <div className="flex gap-4">
+      <div className="flex gap-6">
         <p className="flex gap-1 items-center">
           <span>
             <Image src={bag} alt="bag" />
@@ -55,21 +56,27 @@ const MainNav = () => {
 const UtilityNav = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
     <div className="bg-white left-0 flex items-center text-black w-full justify-between z-20 py-3 px-3 xs:flex lg:hidden">
-      <p onClick={toggleSidebar} className="cursor-pointer">
-        <Image src={burgermenu} alt="menu" />
-      </p>
-      <p>
-        <Image src={search} alt="search" />
-      </p>
+      <div className="flex gap-8">
+        <p onClick={toggleSidebar} className="cursor-pointer">
+          <Image src={burgermenu} alt="menu" />
+        </p>
+        <p>
+          <Image src={search} alt="search" />
+        </p>
+      </div>
+
       <p>
         <Image src={logo} alt="logo" width={60} />
       </p>
-      <p>
-        <Image src={user} alt="user" />
-      </p>
-      <p>
-        <Image src={bag} alt="cart" />
-      </p>
+
+      <div className="flex gap-8">
+        <p>
+          <Image src={user} alt="user" />
+        </p>
+        <p>
+          <Image src={bag} alt="cart" />
+        </p>
+      </div>
     </div>
   );
 };

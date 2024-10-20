@@ -1,12 +1,11 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation } from "swiper/modules";
-import { featureImages } from "../lib/images";
-import FeatureCard from "./featureCard";
-import SectionHeading from "./sectionHeading";
 import { Pagination } from "swiper/modules";
+import SectionHeading from "../sectionHeading";
+import { featureImages } from "@/app/lib/images";
+import FeatureCard from "../Cards/featureCard";
 
-const FeaturesSwiper = () => {
+const FeaturesSection = () => {
   return (
     <div>
       <SectionHeading heading="featured on ella" />
@@ -16,7 +15,6 @@ const FeaturesSwiper = () => {
         spaceBetween={5}
         loop={true}
         breakpoints={{
-          // When the screen width is >= 640px (sm)
           320: {
             slidesPerView: 1,
           },
@@ -41,4 +39,4 @@ const FeaturesSwiper = () => {
   );
 };
 
-export default FeaturesSwiper;
+export default FeaturesSection;

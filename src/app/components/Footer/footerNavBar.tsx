@@ -1,9 +1,9 @@
 import Image from "next/image";
-import bag from "@/app/assets/bag.svg";
-import home from "@/app/assets/home.svg";
-import collection from "@/app/assets/collection.svg";
-import search from "@/app/assets/search.svg";
-import account from "@/app/assets/account.svg";
+import bag from "@/app/assets/icons/bag.svg";
+import home from "@/app/assets/icons/home.svg";
+import collection from "@/app/assets/icons/collection.svg";
+import search from "@/app/assets/icons/search.svg";
+import account from "@/app/assets/icons/account.svg";
 
 const FooterNavBar = () => {
   return (

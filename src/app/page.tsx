@@ -22,11 +22,12 @@ import FeaturesSwiper from "./components/featuredSection";
 import SectionHeading from "./components/sectionHeading";
 import TrendingNowSwiper from "./components/trendingSection";
 import Hero from "./components/hero";
+import BrandsSwiper from "./components/brandsSection";
 
 export default function Home() {
   return (
     <div>
-      <div className="xs:w-11/12 lg:w-10/12 2xl:8/12 mx-auto relative">
+      <div className="xs:w-11/12 lg:w-10/12 2xl:w-8/12 mx-auto relative">
         {/* Hero Wrapper */}
         <Hero
           imgDesktop={heroOneDesktop}
@@ -69,12 +70,17 @@ export default function Home() {
         </section>
 
         {/* Featured On Wrapper */}
-        <section className="py-5">
+        <section className="pt-5 pb-10">
           <FeaturesSwiper />
         </section>
 
+        {/* Brand cards swiper */}
+        <section className="py-5 border-t-2">
+          <BrandsSwiper />
+        </section>
+
         {/* Insta Cards Swiper */}
-        <section className="py-5">
+        <section className="py-5 ">
           <InstaCardsSwiper />
         </section>
       </div>

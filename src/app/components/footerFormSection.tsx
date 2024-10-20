@@ -12,9 +12,9 @@ const FooterFormSection = () => {
         <input
           type="email"
           placeholder="enter your email address"
-          className="p-2 w-2/3 bg-black  border border-white"
+          className="p-2 w-2/3 border border-white"
         />
-        <button className="w-44 py-2 px-5 bg-white text-black font-semibold hover:bg-black hover:text-white transition-all duration-500 border border-black ">
+        <button className="w-44 py-2 px-5 bg-white text-custom-black font-semibold hover:bg-custom-black hover:text-white transition-all duration-500 border border-custom-black">
           SUBMIT
         </button>
       </div>

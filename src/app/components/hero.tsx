@@ -32,7 +32,7 @@ const Hero = ({
         }
       `}</style>
       <div
-        className={`hero-wrapper relative w-full xs:h-[800px] md:h-[500px]  bg-cover bg-no-repeat bg-center flex xs:justify-center md:justify-${contentPosition} items-center xs:text-white md:text-black`}
+        className={`hero-wrapper relative w-full xs:h-[800px] md:h-[500px]  bg-cover bg-no-repeat bg-center flex xs:justify-center md:justify-${contentPosition} items-center xs:text-white md:text-custom-black`}
       >
         <div className="flex flex-col items-center gap-5 lg:w-2/3">
           <h1 className="text-3xl font-bold uppercase tracking-wide ">

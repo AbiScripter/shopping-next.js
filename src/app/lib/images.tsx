@@ -45,6 +45,12 @@ import heroOneDesktop from "@/app/assets/hero-1-desktop.jpg";
 import heroTwoMobile from "@/app/assets/hero-2-mobile.webp";
 import heroTwoDesktop from "@/app/assets/hero-2-desktop.webp";
 
+import brandOne from "@/app/assets/brand-1.webp";
+import brandTwo from "@/app/assets/brand-2.webp";
+import brandThree from "@/app/assets/brand-3.webp";
+import brandFour from "@/app/assets/brand-4.webp";
+import brandFive from "@/app/assets/brand-5.webp";
+
 export { heroOneDesktop, heroOneMobile, heroTwoMobile, heroTwoDesktop };
 
 export const newArrivalsImages = [
@@ -201,6 +207,16 @@ export const socialMediaIcons = [
   { src: tiktok, alt: "TikTok" },
   { src: youtube, alt: "YouTube" },
   { src: twitter, alt: "Twitter" },
+];
+
+export const brandImages = [
+  { src: brandOne, alt: "brandOne" },
+  { src: brandTwo, alt: "brandTwo" },
+  { src: brandThree, alt: "brandThree" },
+  { src: brandFour, alt: "brandFour" },
+  { src: brandFive, alt: "brandTFive" },
+  { src: brandThree, alt: "brandThreea" },
+  { src: brandOne, alt: "brandOnes" },
 ];
 
 export const paymentIcons = [

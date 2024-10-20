@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "custom-black": "#232323",
       },
       screens: {
         xs: "320px",

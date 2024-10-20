@@ -42,11 +42,20 @@
 .swiper-pagination-horizontal {
   position: static !important;
   margin-top: 1.5rem !important;
-  /* background-color: red !important; */
 }
 .swiper-pagination-bullet-active {
-  background: black !important;
+  background: #232323 !important;
 }
+
+/* .button,
+.footer-section,
+.footer-wrapper {
+  background-color: #232323;
+
+  input {
+    background-color: #232323;
+  }
+} */
 
 /* :root {
   --background: #ffffff;

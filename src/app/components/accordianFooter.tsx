@@ -37,9 +37,9 @@ export const AccordianFooterData = [
 const AccordianFooter = () => {
   return (
     //this div is just for outer layering
-    <div className="mt-5 bg-black md:hidden">
+    <div className="mt-5 footer-wrapper md:hidden bg-custom-black">
       {/* footer content */}
-      <div className="flex gap-10 flex-col bg-black text-white xs:w-11/12 mx-auto py-10">
+      <div className="flex gap-10 flex-col footer-section text-white xs:w-11/12 mx-auto py-10 bg-custom-black">
         {/* Accordian */}
         <div className="flex flex-col gap-8">
           {AccordianFooterData.map((data, index) => (

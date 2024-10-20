@@ -1,19 +1,19 @@
 import Image, { StaticImageData } from "next/image";
 
 type CategoryCardProps = {
-  imgsrc: StaticImageData;
+  src: StaticImageData;
   title: string;
 };
 
-const CategoryCard = ({ imgsrc, title }: CategoryCardProps) => {
+const CategoryCard = ({ src, title }: CategoryCardProps) => {
   return (
-    <div className="overflow-hidden relative w-full border border-green-600">
+    <div className="overflow-hidden relative w-full">
       <Image
-        src={imgsrc}
+        src={src}
         alt="category-card"
-        className="transition-all duration-700 hover:scale-110 cursor-pointer"
+        className="transition-all duration-700 hover:scale-110 cursor-pointer w-full"
       />
-      <p className="text-white font-semibold  text-center absolute top-1/2 left-auto w-full hover:underline cursor-pointer">
+      <p className="text-white text-lg font-semibold  text-center absolute top-1/2 left-auto w-full hover:underline cursor-pointer">
         {title.toUpperCase()}
       </p>
     </div>

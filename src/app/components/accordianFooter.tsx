@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { paymentIcons, socialMediaIcons } from "../lib/images";
+import { paymentIcons } from "../lib/images";
 import Accordian from "./accodian";
+import FooterFormSection from "./footerFormSection";
 
-const AccordianFooterData = [
+export const AccordianFooterData = [
   {
     title: "SHOP",
     contentArray: [
@@ -36,9 +37,9 @@ const AccordianFooterData = [
 const AccordianFooter = () => {
   return (
     //this div is just for outer layering
-    <div className="mt-20 bg-black">
+    <div className="mt-5 bg-black md:hidden">
       {/* footer content */}
-      <div className="flex gap-10 flex-col bg-black text-white md:hidden xs:w-11/12 mx-auto py-10">
+      <div className="flex gap-10 flex-col bg-black text-white xs:w-11/12 mx-auto py-10">
         {/* Accordian */}
         <div className="flex flex-col gap-8">
           {AccordianFooterData.map((data, index) => (
@@ -47,35 +48,7 @@ const AccordianFooter = () => {
         </div>
 
         {/* footer form */}
-        <div className="flex flex-col gap-4 md:col-span-2 ">
-          <h4 className="font-bold">NEWSLETTER SIGN UP</h4>
-          <p className="text-sm">
-            Sign up for exclusive updates, new arrivals & insider only discounts
-          </p>
-
-          <div className="flex gap-2">
-            <input
-              type="email"
-              placeholder="enter your email address"
-              className="p-2 w-2/3 bg-black  border border-white"
-            />
-            <button className="w-44 py-2 px-5 bg-white text-black font-semibold hover:bg-black hover:text-white transition-all duration-500 border border-black ">
-              SUBMIT
-            </button>
-          </div>
-
-          {/* social media icons */}
-          <div className="flex gap-4">
-            {socialMediaIcons.map((icon, index) => (
-              <Image
-                key={index}
-                src={icon.src}
-                alt={icon.alt}
-                className="bg-white rounded-full p-2 w-8 cursor-pointer"
-              />
-            ))}
-          </div>
-        </div>
+        <FooterFormSection />
 
         {/* Payment icons and copyright */}
         <div className="flex  flex-col gap-4 items-center my-10">

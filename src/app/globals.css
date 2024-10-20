@@ -7,7 +7,7 @@
 }
 
 .swiper-button-next {
-  background-image: url(./assets/next-button.svg);
+  background-image: url("./assets/next-button.svg");
   background-color: white;
   border: 1px solid black;
   border-color: gray;
@@ -22,7 +22,7 @@
 }
 
 .swiper-button-prev {
-  background-image: url(./assets/prev-button.svg);
+  background-image: url("./assets/prev-button.svg");
   transform: rotate(-180deg);
   background-color: white;
   border: 1px solid black;
@@ -35,6 +35,17 @@
 
 .swiper-button-prev::after {
   display: none;
+}
+
+.swiper-pagination,
+.swiper-pagination-bullets,
+.swiper-pagination-horizontal {
+  position: static !important;
+  margin-top: 1.5rem !important;
+  /* background-color: red !important; */
+}
+.swiper-pagination-bullet-active {
+  background: black !important;
 }
 
 /* :root {

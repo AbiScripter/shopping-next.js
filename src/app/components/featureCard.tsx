@@ -10,7 +10,7 @@ type FeatureCardProps = {
 const FeatureCard = ({ src, title, content }: FeatureCardProps) => {
   return (
     <div className="flex flex-col gap-5 items-center">
-      <div className="">
+      <div className="overflow-hidden">
         <Image
           src={src}
           alt="feature-card"

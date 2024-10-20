@@ -47,6 +47,10 @@
   background: #232323 !important;
 }
 
+.logo {
+  background-color: white;
+  color: red;
+}
 /* .button,
 .footer-section,
 .footer-wrapper {

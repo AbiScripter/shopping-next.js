@@ -11,9 +11,6 @@ const FeaturesSwiper = () => {
     <div>
       <SectionHeading heading="featured on ella" />
       <Swiper
-        // className="w-full"
-        // navigation
-        // modules={[Navigation]}
         pagination={true}
         modules={[Pagination]}
         spaceBetween={5}

@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+import plus from "@/app/assets/plus.svg";
+import minus from "@/app/assets/minus.svg";
+import Image from "next/image";
 
 type accordianProps = {
   title: string;
@@ -20,7 +23,13 @@ const Accordian = ({ title, contentArray }: accordianProps) => {
         className="flex justify-between items-center border-b-2 mb-4 pb-4"
       >
         <p className="font-semibold">{title}</p>
-        <p className="">{isOpen ? "-" : "+"}</p>
+        <p className="">
+          {isOpen ? (
+            <Image src={minus} alt="minus" />
+          ) : (
+            <Image src={plus} alt="plus" />
+          )}
+        </p>
       </div>
       <div
         className={`transition-max-height duration-500 ease-in-out overflow-hidden ${

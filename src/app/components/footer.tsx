@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { paymentIcons } from "../lib/images";
-import { AccordianFooterData } from "./accordianFooter";
+import { AccordianFooterData } from "./mobileFooter";
 import FooterFormSection from "./footerFormSection";
 
 const Footer = () => {
   return (
     <div className="mt-5 footer-wrapper xs:hidden md:block  bg-custom-black">
-      <div className="flex gap-5 flex-col footer-section text-gray-300 xs:w-11/12 lg:w-10/12 xl:w-7/12 mx-auto bg-custom-black">
+      <div className="flex gap-5 flex-col footer-section text-gray-300 xs:w-11/12 lg:w-10/12 2xl:w-8/12 mx-auto bg-custom-black">
         <div className="grid md:grid-cols-3 gap-10 lg:grid-cols-5 my-10">
           {/* footer links */}
           <>
@@ -31,7 +31,7 @@ const Footer = () => {
           <FooterFormSection />
         </div>
 
-        <div className="flex justify-between items-center my-10">
+        <div className="flex justify-between items-center my-10 mb-28">
           <p className="text-sm">
             © 2024, Ella Demo. All Rights Reserved. Themes By Halothemes
           </p>

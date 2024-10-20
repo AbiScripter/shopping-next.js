@@ -14,16 +14,21 @@ import {
 } from "./lib/images";
 import InstaCardsSwiper from "./components/instaCardsSection";
 import Footer from "./components/footer";
-import AccordianFooter from "./components/accordianFooter";
 import FeaturesSwiper from "./components/featuredSection";
 import SectionHeading from "./components/sectionHeading";
 import TrendingNowSwiper from "./components/trendingSection";
 import Hero from "./components/hero";
 import BrandsSwiper from "./components/brandsSection";
+import Header from "./components/header";
+import FooterNavBar from "./components/footerNavBar";
+import CategoryNavBar from "./components/categoryNavbar";
+import MobileFooter from "./components/mobileFooter";
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
+      <Header />
+      <CategoryNavBar />
       <div className="xs:w-11/12 lg:w-10/12 2xl:w-8/12 mx-auto relative">
         {/* Hero Wrapper */}
         <Hero
@@ -83,7 +88,8 @@ export default function Home() {
       </div>
 
       <Footer />
-      <AccordianFooter />
+      <MobileFooter />
+      <FooterNavBar />
     </div>
   );
 }

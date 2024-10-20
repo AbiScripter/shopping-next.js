@@ -34,7 +34,7 @@ export const AccordianFooterData = [
   },
 ];
 
-const AccordianFooter = () => {
+const MobileFooter = () => {
   return (
     //this div is just for outer layering
     <div className="mt-5 footer-wrapper md:hidden bg-custom-black">
@@ -51,7 +51,7 @@ const AccordianFooter = () => {
         <FooterFormSection />
 
         {/* Payment icons and copyright */}
-        <div className="flex  flex-col gap-4 items-center my-10">
+        <div className="flex  flex-col gap-4 items-center my-10 mb-20">
           <p className="text-sm">
             © 2024, Ella Demo. All Rights Reserved. Themes By Halothemes
           </p>
@@ -66,4 +66,4 @@ const AccordianFooter = () => {
   );
 };
 
-export default AccordianFooter;
+export default MobileFooter;

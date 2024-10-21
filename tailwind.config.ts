@@ -12,6 +12,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         "custom-black": "#232323",
+        "custom-text": "#3c3c3c",
       },
       screens: {
         xs: "320px",

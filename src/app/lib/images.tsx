@@ -51,6 +51,20 @@ import brandThree from "@/app/assets/brands/brand-3.webp";
 import brandFour from "@/app/assets/brands/brand-4.webp";
 import brandFive from "@/app/assets/brands/brand-5.webp";
 
+import galleryImgOne from "@/app/assets/gallery/gallery-img-one.webp";
+import galleryImgTwo from "@/app/assets/gallery/gallery-img-two.webp";
+import galleryImgThree from "@/app/assets/gallery/gallery-img-three.webp";
+import galleryImgFour from "@/app/assets/gallery/gallery-img-four.webp";
+import galleryImgFive from "@/app/assets/gallery/gallery-img-five.webp";
+import galleryImgSix from "@/app/assets/gallery/gallery-img-six.webp";
+
+import galleryImgThumbOne from "@/app/assets/gallery/gallery-img-one-thumb.jpg";
+import galleryImgThumbTwo from "@/app/assets/gallery/gallery-img-two-thumb.jpg";
+import galleryImgThumbThree from "@/app/assets/gallery/gallery-img-three-thumb.jpg";
+import galleryImgThumbFour from "@/app/assets/gallery/gallery-img-four-thumb.jpg";
+import galleryImgThumbFive from "@/app/assets/gallery/gallery-img-five-thumb.jpg";
+import galleryImgThumbSix from "@/app/assets/gallery/gallery-img-six-thumb.jpg";
+
 export { heroOneDesktop, heroOneMobile, heroTwoMobile, heroTwoDesktop };
 
 export const newArrivalsImages = [
@@ -226,4 +240,22 @@ export const paymentIcons = [
   { src: americanExpress, alt: "americanExpress" },
   { src: applePay, alt: "applePay" },
   { src: bitcoin, alt: "bitcoin" },
+];
+
+export const galleryImages = [
+  { src: galleryImgOne, alt: "galleryone" },
+  { src: galleryImgTwo, alt: "gallerytwo" },
+  { src: galleryImgThree, alt: "gallerthree" },
+  { src: galleryImgFour, alt: "galleryfour" },
+  { src: galleryImgFive, alt: "galleryfive" },
+  { src: galleryImgSix, alt: "gallerysix" },
+];
+
+export const galleryImageThumbs = [
+  { src: galleryImgThumbOne, alt: "galleryone" },
+  { src: galleryImgThumbTwo, alt: "gallerytwo" },
+  { src: galleryImgThumbThree, alt: "gallerthree" },
+  { src: galleryImgThumbFour, alt: "galleryfour" },
+  { src: galleryImgThumbFive, alt: "galleryfive" },
+  { src: galleryImgThumbSix, alt: "gallerysix" },
 ];

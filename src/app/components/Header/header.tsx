@@ -8,6 +8,7 @@ import heart from "@/app/assets/icons/heart.svg";
 import search from "@/app/assets/icons/search.svg";
 import burgermenu from "@/app/assets/icons/hamburger.svg";
 import user from "@/app/assets/icons/user.svg";
+import smallbag from "@/app/assets/icons/bagsmall.svg";
 
 import Sidebar from "./sidebar";
 
@@ -37,7 +38,7 @@ const MainNav = () => {
       <div className="flex gap-6">
         <p className="flex gap-1 items-center">
           <span>
-            <Image src={bag} alt="bag" />
+            <Image src={smallbag} alt="bag" />
           </span>
           <span>Shopping cart</span>
         </p>

@@ -1,32 +1,26 @@
 "use client";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { SwiperSlide } from "swiper/react";
 import SectionHeading from "../sectionHeading";
 import { featureImages } from "@/app/lib/images";
 import FeatureCard from "../Cards/featureCard";
+import CustomSwiper from "./customSwiper";
 
 const FeaturesSection = () => {
   return (
     <div>
       <SectionHeading heading="featured on ella" />
-      <Swiper
+      <CustomSwiper
         pagination={true}
-        modules={[Pagination]}
-        spaceBetween={5}
-        loop={true}
         breakpoints={{
           320: {
             slidesPerView: 1,
           },
-          // When the screen width is >= 768px (md)
           768: {
             slidesPerView: 2,
           },
-          // When the screen width is >= 1024px (lg)
           1024: {
             slidesPerView: 3,
           },
-          // When the screen width is >= 1280px (xl)
         }}
       >
         {featureImages.map((img, index) => (
@@ -34,7 +28,7 @@ const FeaturesSection = () => {
             <FeatureCard {...img} />
           </SwiperSlide>
         ))}
-      </Swiper>
+      </CustomSwiper>
     </div>
   );
 };

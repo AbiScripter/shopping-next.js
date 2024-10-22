@@ -37,7 +37,7 @@ export const AccordianFooterData = [
 const MobileFooter = () => {
   return (
     //this div is just for outer layering
-    <div className="mt-5 footer-wrapper md:hidden bg-custom-black">
+    <div className="footer-wrapper md:hidden bg-custom-black dark:border-t-2">
       {/* footer content */}
       <div className="flex gap-10 flex-col footer-section text-white xs:w-11/12 mx-auto py-10 bg-custom-black">
         {/* Accordian */}

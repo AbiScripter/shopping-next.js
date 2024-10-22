@@ -17,7 +17,6 @@ export default function ProductGallery() {
     <div>
       <Swiper
         loop={true}
-        // spaceBetween={10}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
@@ -30,29 +29,18 @@ export default function ProductGallery() {
       </Swiper>
 
       <Swiper
-        onSwiper={setThumbsSwiper} // No change needed here
+        onSwiper={setThumbsSwiper}
         loop={true}
         navigation={true}
-        // slidesPerView={4}
-        // spaceBetween={10}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper m-8"
         breakpoints={{
-          // When the screen width is >= 640px (sm)
           320: {
             slidesPerView: 4,
           },
-          // When the screen width is >= 768px (md)
-          // 768: {
-          //   slidesPerView: 3,
-          // },
-          // // When the screen width is >= 1024px (lg)
-          // 1024: {
-          //   slidesPerView: 4,
-          // },
-          // When the screen width is >= 1280px (xl)
+
           1900: {
             slidesPerView: 3,
           },

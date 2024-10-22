@@ -19,7 +19,7 @@ const Header = () => {
     setSidebarOpen(!sidebarOpen);
   };
   return (
-    <div className="text-sm py-5  ">
+    <div className="text-sm py-5 p-6  bg-white dark:bg-custom-black text-custom-black dark:text-white">
       <div className="xs:w-11/12 3xl:w-8/12  mx-auto">
         <MainNav />
         <UtilityNav toggleSidebar={toggleSidebar} />
@@ -31,7 +31,7 @@ const Header = () => {
 
 const UtilityNav = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
-    <div className="bg-white left-0 flex items-center text-black w-full justify-between z-20 py-3 px-3 xs:flex lg:hidden">
+    <div className="bg-white dark:bg-custom-black text-custom-black dark:text-white left-0 flex items-center  w-full justify-between z-20 py-3 px-3 xs:flex lg:hidden">
       <div className="flex gap-8">
         <p onClick={toggleSidebar} className="cursor-pointer">
           <Image src={burgermenu} alt="menu" />

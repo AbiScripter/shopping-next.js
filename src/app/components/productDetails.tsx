@@ -84,7 +84,7 @@ const ProductDetails = () => {
       {/* add to cart and shop */}
       <div className="flex flex-col gap-3">
         <div className="flex gap-2 items-center">
-          <button className="w-10/12 py-3 px-5  button bg-custom-black text-white font-semibold hover:bg-white hover:text-custom-black transition-all duration-500 border border-custom-black">
+          <button className="w-10/12 py-3 px-5  font-semibold button bg-custom-black dark:bg-white text-white dark:text-custom-black hover:bg-white dark:hover:bg-custom-black hover:text-custom-black dark:hover:text-white transition-all duration-500 border border-custom-black dark:border-white">
             ADD TO CART
           </button>
           <Image src={heart} alt="heart" />

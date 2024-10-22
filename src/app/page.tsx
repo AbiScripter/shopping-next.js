@@ -13,13 +13,8 @@ import {
   heroTwoMobile,
 } from "./lib/images";
 
-import Footer from "./components/Footer/footer";
 import SectionHeading from "./components/sectionHeading";
 import Hero from "./components/hero";
-import FooterNavBar from "./components/Footer/footerNavBar";
-import CategoryNavBar from "./components/Header/categoryNavbar";
-import MobileFooter from "./components/Footer/mobileFooter";
-import Header from "./components/Header/header";
 import TrendingSection from "./components/Sections/trendingSection";
 import FeaturesSection from "./components/Sections/featuredSection";
 import BrandsSection from "./components/Sections/brandsSection";
@@ -27,9 +22,7 @@ import InstagramSection from "./components/Sections/instaCardsSection";
 
 export default function Home() {
   return (
-    <div className="relative">
-      {/* <Header />
-      <CategoryNavBar /> */}
+    <div className="relative dark:bg-custom-black dark:text-white">
       <div className="xs:w-11/12 3xl:w-8/12 mx-auto relative">
         {/* Hero Wrapper */}
         <Hero
@@ -87,10 +80,6 @@ export default function Home() {
           <InstagramSection />
         </section>
       </div>
-      {/* 
-      <Footer />
-      <MobileFooter />
-      <FooterNavBar /> */}
     </div>
   );
 }

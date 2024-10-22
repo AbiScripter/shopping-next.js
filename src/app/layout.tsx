@@ -6,6 +6,7 @@ import CategoryNavBar from "./components/Header/categoryNavbar";
 import Footer from "./components/Footer/footer";
 import MobileFooter from "./components/Footer/mobileFooter";
 import FooterNavBar from "./components/Footer/footerNavBar";
+import ThemeSwitcher from "./components/themeSwitcher";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,13 +34,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ThemeSwitcher />
         <Header />
         <CategoryNavBar />
         {children}
-        
-      <Footer />
-      <MobileFooter />
-      <FooterNavBar />
+
+        <Footer />
+        <MobileFooter />
+        <FooterNavBar />
       </body>
     </html>
   );

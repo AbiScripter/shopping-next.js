@@ -5,7 +5,7 @@ import FooterFormSection from "./footerFormSection";
 
 const Footer = () => {
   return (
-    <div className="mt-5 footer-wrapper xs:hidden md:block  bg-custom-black">
+    <div className="footer-wrapper xs:hidden md:block  bg-custom-black dark:border-t-2">
       <div className="flex gap-5 flex-col footer-section text-gray-300 xs:w-11/12 3xl:w-8/12  mx-auto bg-custom-black">
         <div className="grid md:grid-cols-3 gap-10 lg:grid-cols-5 my-10">
           {/* footer links */}

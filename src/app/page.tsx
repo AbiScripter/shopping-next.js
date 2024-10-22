@@ -28,9 +28,9 @@ import InstagramSection from "./components/Sections/instaCardsSection";
 export default function Home() {
   return (
     <div className="relative">
-      <Header />
-      <CategoryNavBar />
-      <div className="xs:w-11/12 lg:w-10/12 2xl:w-8/12 mx-auto relative">
+      {/* <Header />
+      <CategoryNavBar /> */}
+      <div className="xs:w-11/12 3xl:w-8/12 mx-auto relative">
         {/* Hero Wrapper */}
         <Hero
           imgDesktop={heroOneDesktop}
@@ -87,10 +87,10 @@ export default function Home() {
           <InstagramSection />
         </section>
       </div>
-
+      {/* 
       <Footer />
       <MobileFooter />
-      <FooterNavBar />
+      <FooterNavBar /> */}
     </div>
   );
 }

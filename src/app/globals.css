@@ -51,6 +51,15 @@
   background-color: white;
   color: red;
 }
+
+.gallery-image-container {
+  display: flex !important;
+  justify-content: center !important;
+
+  img {
+    min-width: 100% !important;
+  }
+}
 /* .button,
 .footer-section,
 .footer-wrapper {

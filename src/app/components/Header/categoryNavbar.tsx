@@ -1,7 +1,7 @@
 const CategoryNavBar = () => {
   return (
     <div className="bg-black xs:hidden lg:flex">
-      <div className="flex gap-8 items-center py-4 lg:w-10/12 2xl:w-8/12 mx-auto text-white font-semibold ">
+      <div className="flex gap-8 items-center py-4 xs:w-11/12 3xl:w-8/12 mx-auto text-white font-semibold ">
         <p>THEME DEMO</p>
         <p>SHOP</p>
         <p>PRODUCT</p>

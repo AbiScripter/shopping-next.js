@@ -23,7 +23,7 @@ export default function ProductGallery() {
         className="mySwiper2"
       >
         {galleryImages.map((img, index) => (
-          <SwiperSlide key={index} className="border border-red-700">
+          <SwiperSlide key={index} className=" gallery-image-container">
             <Image src={img.src} alt={img.alt} />
           </SwiperSlide>
         ))}
@@ -33,12 +33,30 @@ export default function ProductGallery() {
         onSwiper={setThumbsSwiper} // No change needed here
         loop={true}
         navigation={true}
-        slidesPerView={4}
-        spaceBetween={10}
+        // slidesPerView={4}
+        // spaceBetween={10}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper m-8"
+        breakpoints={{
+          // When the screen width is >= 640px (sm)
+          320: {
+            slidesPerView: 4,
+          },
+          // When the screen width is >= 768px (md)
+          // 768: {
+          //   slidesPerView: 3,
+          // },
+          // // When the screen width is >= 1024px (lg)
+          // 1024: {
+          //   slidesPerView: 4,
+          // },
+          // When the screen width is >= 1280px (xl)
+          1900: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {galleryImageThumbs.map((img, index) => (
           <SwiperSlide key={index}>

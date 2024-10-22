@@ -20,7 +20,7 @@ const Header = () => {
   };
   return (
     <div className="text-sm py-5  ">
-      <div className="xs:w-11/12 lg:w-10/12 2xl:w-8/12 mx-auto">
+      <div className="xs:w-11/12 3xl:w-8/12  mx-auto">
         <MainNav />
         <UtilityNav toggleSidebar={toggleSidebar} />
         <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />

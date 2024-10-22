@@ -17,12 +17,12 @@ const TabsSection = () => {
   }
 
   return (
-    <div className="">
-      <div className="flex gap-8 py-3 justify-center">
+    <div className="border-b-2">
+      <div className="flex gap-8 py-2 justify-center border-b-2 pb-0">
         {tabs.map((t, index) => (
           <p
-            className={`font-semibold cursor-pointer ${
-              activeTab === index ? "border-b-2 pb-2" : ""
+            className={`font-semibold cursor-pointer text-xl ${
+              activeTab === index ? "border-b-4 pb-2 border-black" : ""
             }`}
             onClick={() => handleClick(index)}
             key={index}
@@ -32,7 +32,7 @@ const TabsSection = () => {
         ))}
       </div>
 
-      <div>
+      <div className="py-4">
         {activeTab === 0 && <TabOne />}
         {activeTab === 1 && <TabTwo />}
         {activeTab === 2 && <TabThree />}

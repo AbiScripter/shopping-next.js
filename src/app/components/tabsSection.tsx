@@ -1,46 +1,8 @@
 "use client";
-
 import { useState } from "react";
-
-const tabs = [
-  "Description",
-  "Additional Information",
-  "Shipping & Return",
-  "Custom Tab",
-];
-
-const TabsSection = () => {
-  const [activeTab, setActiveTab] = useState<number>(0);
-
-  function handleClick(t: number) {
-    setActiveTab(t);
-  }
-
-  return (
-    <div className="border-b-2">
-      <div className="flex gap-8 py-2 justify-center border-b-2 pb-0">
-        {tabs.map((t, index) => (
-          <p
-            className={`font-semibold cursor-pointer text-xl ${
-              activeTab === index ? "border-b-4 pb-2 border-black" : ""
-            }`}
-            onClick={() => handleClick(index)}
-            key={index}
-          >
-            {t}
-          </p>
-        ))}
-      </div>
-
-      <div className="py-4">
-        {activeTab === 0 && <TabOne />}
-        {activeTab === 1 && <TabTwo />}
-        {activeTab === 2 && <TabThree />}
-        {activeTab === 3 && <TabFour />}
-      </div>
-    </div>
-  );
-};
+import close from "@/app/assets/icons/closeBlack.svg";
+import rightArrow from "@/app/assets/icons/right-arrow.svg";
+import Image from "next/image";
 
 const TabOne = () => {
   return (
@@ -182,6 +144,136 @@ const TabFour = () => {
       <div className="bg-gray-100 p-4 flex gap-20">
         <h3 className="">Cosmopolis</h3>
         <p>Donec pretium egestas sapien et mollis</p>
+      </div>
+    </div>
+  );
+};
+
+const tabs = [
+  "Description",
+  "Additional Information",
+  "Shipping & Return",
+  "Custom Tab",
+];
+
+const tabComponents = [TabOne, TabTwo, TabThree, TabFour];
+
+const TabsSection = () => {
+  const [activeTab, setActiveTab] = useState<number>(0);
+
+  function handleClick(t: number) {
+    setActiveTab(t);
+  }
+
+  const ActiveTabComponent = tabComponents[activeTab]; // Get the active component
+
+  return (
+    <div>
+      <div className="border-b-2 xs:hidden md:block">
+        <div className="flex gap-8 py-2 justify-center border-b-2 pb-0">
+          {tabs.map((tab, index) => (
+            <p
+              className={`font-semibold cursor-pointer text-xl ${
+                activeTab === index ? "border-b-4 pb-2 border-black" : ""
+              }`}
+              onClick={() => handleClick(index)}
+              key={index}
+            >
+              {tab}
+            </p>
+          ))}
+        </div>
+
+        <div className="py-4">
+          {/* Use JSX to render the active tab component */}
+          <ActiveTabComponent />
+        </div>
+      </div>
+
+      <div className="xs:block md:hidden">
+        <MobileTabSection />
+      </div>
+    </div>
+  );
+};
+
+const MobileTabSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [activeTab, setActiveTab] = useState<number>(0);
+
+  // Get the active component
+
+  function handleClick(index: number) {
+    handleModal(true);
+    setActiveTab(index);
+  }
+
+  function handleModal(isOpen: boolean) {
+    setIsModalOpen(isOpen);
+  }
+
+  return (
+    <div>
+      <div>
+        {tabs.map((t, index) => (
+          <div
+            className={`font-semibold cursor-pointer text-xl py-3 border-b-2 flex justify-between items-center`}
+            onClick={() => handleClick(index)}
+            key={index}
+          >
+            <p>{t}</p>
+            <p>
+              <Image src={rightArrow} alt="right-arrow" />
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div>
+        <TabModal
+          onModal={handleModal}
+          activeTab={activeTab}
+          isModalOpen={isModalOpen}
+        />
+      </div>
+    </div>
+  );
+};
+
+type TabModalProps = {
+  onModal: (isOpen: boolean) => void;
+  activeTab: number;
+  isModalOpen: boolean;
+};
+
+const TabModal = ({ onModal, activeTab, isModalOpen }: TabModalProps) => {
+  if (!isModalOpen) return null;
+
+  const tabComponents = [TabOne, TabTwo, TabThree, TabFour];
+  const ActiveTabComponent = tabComponents[activeTab];
+
+  function handleClose() {
+    onModal(false);
+  }
+
+  return (
+    <div
+      className={`fixed inset-0 bg-black bg-opacity-50 z-40 flex items-start justify-center`}
+    >
+      <div
+        className={`relative bg-white w-full h-full p-4 rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out ${
+          isModalOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <div className="flex justify-between items-center shadow-md text-lg font-semibold p-2">
+          <p className="">{tabs[activeTab]}</p>
+          <Image src={close} alt="close" onClick={handleClose} />
+        </div>
+
+        {/* Render the active tab component */}
+        <div className="mt-4">
+          <ActiveTabComponent />
+        </div>
       </div>
     </div>
   );

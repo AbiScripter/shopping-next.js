@@ -29,31 +29,6 @@ const Header = () => {
   );
 };
 
-const MainNav = () => {
-  return (
-    <div className="flex justify-between items-center xs:hidden lg:flex">
-      <p className="bg-red text-red-500">
-        <Image width={70} src={logo} alt="logo" className="logo" />
-      </p>
-      <div className="flex gap-6">
-        <p className="flex gap-1 items-center">
-          <span>
-            <Image src={smallbag} alt="bag" />
-          </span>
-          <span>Shopping cart</span>
-        </p>
-        <p className="flex gap-1 items-center">
-          <span>
-            <Image src={heart} alt="heart" />
-          </span>
-          <span> My wish list</span>
-        </p>
-        <p>Sign in or Create an account</p>
-      </div>
-    </div>
-  );
-};
-
 const UtilityNav = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
     <div className="bg-white left-0 flex items-center text-black w-full justify-between z-20 py-3 px-3 xs:flex lg:hidden">
@@ -77,6 +52,31 @@ const UtilityNav = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
         <p>
           <Image src={bag} alt="cart" />
         </p>
+      </div>
+    </div>
+  );
+};
+
+const MainNav = () => {
+  return (
+    <div className="flex justify-between items-center xs:hidden lg:flex">
+      <p className="bg-red text-red-500">
+        <Image width={70} src={logo} alt="logo" className="logo" />
+      </p>
+      <div className="flex gap-6">
+        <p className="flex gap-1 items-center">
+          <span>
+            <Image src={smallbag} alt="bag" />
+          </span>
+          <span>Shopping cart</span>
+        </p>
+        <p className="flex gap-1 items-center">
+          <span>
+            <Image src={heart} alt="heart" />
+          </span>
+          <span> My wish list</span>
+        </p>
+        <p>Sign in or Create an account</p>
       </div>
     </div>
   );

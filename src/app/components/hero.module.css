@@ -1,0 +1,27 @@
+.heroWrapper {
+  @apply relative w-full bg-cover bg-no-repeat bg-center flex items-center;
+}
+
+.heroWrapper.mobile {
+  @apply xs:h-[800px];
+}
+
+.heroWrapper.desktop {
+  @apply md:h-[500px];
+}
+
+@media (min-width: 768px) {
+  .contentStart {
+    justify-content: flex-start;
+  }
+
+  .contentEnd {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroWrapper {
+    justify-content: center;
+  }
+}

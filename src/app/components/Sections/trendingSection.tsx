@@ -1,10 +1,10 @@
 "use client"; // Swiper is a client-side library, and using it in server-side rendering (SSR) can cause issues
-import { SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import SectionHeading from "../sectionHeading";
 import { trendingImages } from "@/app/lib/images";
 import DressCard from "../Cards/dressCard";
+import { SwiperSlide } from "swiper/react";
 import CustomSwiper from "./customSwiper";
 
 const TrendingSection = () => {
